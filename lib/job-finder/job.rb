@@ -1,11 +1,10 @@
 class Job
-	attr_accessor :title , :company , :pay , :url , :desc , :index
+	attr_accessor :title , :company , :pay , :desc , :index
 	@@all = []
-	def initialize(title,company,pay,url,desc,index)
+	def initialize(title,company,pay,desc,index)
 		@title = title
 		@company = company
 		@pay = pay
-		@url = url
 		@desc = desc
 		@index = index
 		@@all << self

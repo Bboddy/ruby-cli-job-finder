@@ -15,9 +15,8 @@ class Scraper
   		title = listing.css('.title').text.strip
   		company = listing.css('.company').text.strip
   		pay = listing.css('.salaryText').text.strip
-  		url = listing.css('.data-tu').text.strip
   		desc = listing.css('.summary').text.strip
-      Job.new(title,company,pay,url,desc,index)
+      Job.new(title,company,pay,desc,index)
   		puts "Job #{index} is : ".blue + "#{title.strip}"
   	end
   	return
