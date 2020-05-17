@@ -54,7 +54,7 @@ ruby ./bin/jobs
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Bboddy/ruby-cli-job-finder. This project is intended to be avalible to everyone to do what they want
 
 ## Authors
 
