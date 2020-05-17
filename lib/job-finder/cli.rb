@@ -30,7 +30,13 @@ class Cli
         puts "=============================="
       end
       input = gets.strip
-    	Job.get_info_from_index(input)
+      if input.downcase.strip == "exit"
+        exit
+      elsif input.to_i < 1 || input.to_i > 15
+        puts "Job Not Found".red
+      else
+    	   Job.get_info_from_index(input)
+      end
       i += 1
     end
   end
