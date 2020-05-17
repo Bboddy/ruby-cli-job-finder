@@ -32,7 +32,7 @@ class Cli
       input = gets.strip
       if input.downcase.strip == "exit"
         exit
-      elsif input.to_i < 1 || input.to_i > 15
+      elsif input.to_i < 1 || input.to_i > Job.all.count
         puts "Job Not Found".red
       else
     	   Job.get_info_from_index(input)
