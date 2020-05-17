@@ -16,6 +16,7 @@ class Job
 	end
 
 	def self.get_info_from_index(input)
+		input = input.to_i
 		self.all.each do |job|
 			if job.index == input
 				if job.title == ""
@@ -40,6 +41,5 @@ class Job
 				end
 			end
 		end
-		puts "Could not find that job please choose another (1-15)"
 	end
 end

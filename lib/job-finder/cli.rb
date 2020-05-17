@@ -7,15 +7,20 @@ class Cli
   	puts "==             " + "Or" + "             =="
   	puts "==   " + "Leave Blank for Random".red + "   =="
   	puts "================================"
+
   	@city = gets.strip
   	Scraper.get(@city)
-    puts "=============================="
-  	puts "=      " + "Enter the Number".blue + "      ="
-  	puts "=         " + "of the Job".blue + "         ="
-  	puts "=   " + "You Want Information on".blue + "  ="
-  	puts "=    " + "Enter Nothing to Exit".red + "   ="
-  	puts "=============================="
-    input = gets.strip.to_i
-  	Job.get_info_from_index(input)
+    input = ""
+
+    while input.downcase.strip != "exit"
+      puts "=============================="
+    	puts "=      " + "Enter the Number".blue + "      ="
+    	puts "=         " + "of the Job".blue + "         ="
+    	puts "=   " + "You Want Information on".blue + "  ="
+      puts "=     " + "Type Exit to Exit".red + "      ="
+    	puts "=============================="
+      input = gets.strip
+    	Job.get_info_from_index(input)
+    end
   end
 end
