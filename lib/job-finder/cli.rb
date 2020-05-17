@@ -25,7 +25,7 @@ class Cli
       if i != 0
         puts "=============================="
         puts "=   " + "Type Another Number or".blue + "   ="
-        puts "=  " + "Type List to Show Jobs or".blue + " ="
+        puts "=             " + "Or" + "             ="
         puts "=     " + "Type Exit to Exit".red + "      ="
         puts "=============================="
       end

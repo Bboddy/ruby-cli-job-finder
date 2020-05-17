@@ -1,12 +1,12 @@
 #service file to grab all the needed information from indeed.com
 class Scraper
   def self.get(city)
-    randomCity = ["New York","Los Angeles","Chicago","Houston","Phoenix","Philadelphia","Dallas","Austin","Jacksonville","Columbus","Charlotte","Indianapolis","Seattle","Denver","Washington"]
+    randomCity = ["Chicago","Houston","Phoenix","Philadelphia","Dallas","Austin","Jacksonville","Columbus","Charlotte","Indianapolis","Seattle","Denver","Washington"]
     # Large list of citys to pull from
     if city.strip == ""
       city = randomCity.sample.strip
-      puts "Random city is #{city}"
     end
+    puts "Getting jobs for " + "#{city}".blue
   	url = "https://www.indeed.com/l-#{city.split.join}-jobs.html"
   	html = open(url)
   	doc = Nokogiri::HTML.parse(html)
