@@ -16,18 +16,16 @@ Then download or clone from github
 
 ### Prerequisites
 
-Run bundle install
-If on windows you need to run install win32console
-Check ruby version, should be 2.0 or higher
+Run bundle install.
 
 ```
 bundle install
 ```
-
+If on windows you need to run install win32console.
 ```
 gem install win32console
 ```
-
+Check ruby version, should be 2.0 or higher. If not install ruby.
 ```
 ruby -v
 ```
@@ -58,7 +56,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Bboddy
 
 ## Authors
 
-* **Bryce Boddy** - [PurpleBooth](https://github.com/Bboddy)
+* **Bryce Boddy** - [Me](https://github.com/Bboddy)
 
 ## License
 
